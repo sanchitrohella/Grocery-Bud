@@ -35,10 +35,10 @@ const List = (props) => {
             </div>
             <button
               onClick={() => {
-                props.onDelete(item.id);
                 setDeleteItem((prevState) => {
                   return { msg: "Item Deleted.", flag: "Success" };
                 });
+                props.onDelete(item.id);
               }}
               className={classes.delete}
             >
