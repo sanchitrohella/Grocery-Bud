@@ -1,0 +1,43 @@
+.list-cont {
+  margin-top: 32px;
+}
+
+.list-cont .item-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.item-cont .input-cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.item-cont .delete {
+  background: black;
+  color: #fff;
+  border: none;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.item-cont .delete:hover {
+  background: #0e7490;
+}
+
+.input-cont .line {
+  text-transform: capitalize;
+}
+
+.input-cont .check {
+  text-decoration: line-through;
+}
+
+/* .input-cont input[type="checkbox"]:checked ~ .line {
+  text-decoration: line-through;
+} */
