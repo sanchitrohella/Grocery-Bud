@@ -11,7 +11,6 @@ import {
 import classes from "./ErrorBox.module.css";
 
 const ErrorBox = (props) => {
-  console.log("Success Flag: ", props.successFlag);
   const [isHovered, setIsHovered] = useState(false);
   const enterHandler = () => {
     setIsHovered(true);

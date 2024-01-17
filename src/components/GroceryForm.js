@@ -14,7 +14,6 @@ const GroceryForm = () => {
   };
 
   const submitHandler = (event) => {
-    console.log("submitHandler");
     event.preventDefault();
     if (inputText) {
       let newItem = {
