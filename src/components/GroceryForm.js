@@ -35,7 +35,6 @@ const GroceryForm = () => {
   };
 
   const deleteHandler = (itemId) => {
-    console.log(itemId, list);
     let newArray = list.filter((item) => item.id !== itemId);
     if (newArray.length === 0) {
       localStorage.removeItem("list");
@@ -54,7 +53,6 @@ const GroceryForm = () => {
   };
 
   useEffect(() => {
-    console.log(list);
     if (list.length > 0) {
       localStorage.setItem("list", JSON.stringify(list));
     }
@@ -62,7 +60,6 @@ const GroceryForm = () => {
 
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("list"));
-    console.log(items);
     if (items && items.length > 0) {
       setList((prevState) => [...items]);
     }
